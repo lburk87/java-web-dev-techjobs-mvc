@@ -31,6 +31,7 @@
         <thead>
         <tr>
             <th>ID</th>
+            <th>Name</th>
             <th>Employer</th>
             <th>Location</th>
             <th>Position Type</th>
@@ -38,6 +39,7 @@
         </tr>
         <tr th:each="job : ${jobs}">
             <td th:text="${job.id}"></td>
+            <td th:text="${job.name}"></td>
             <td th:text="${job.employer}"></td>
             <td th:text="${job.location}"></td>
             <td th:text="${job.positionType}"></td>
